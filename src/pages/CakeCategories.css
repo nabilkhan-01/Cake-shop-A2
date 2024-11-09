@@ -1,0 +1,65 @@
+/* src/pages/CakeCategories.css */
+
+.cake-categories {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.categories-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.categories-filter button {
+  padding: 10px 20px;
+  background-color: #050505;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.categories-filter button:hover {
+  background-color: #736b6b;
+}
+
+.categories-filter button.active {
+  background-color: #ff5e5e;
+  color: #fff;
+  border-color: #ff5e5e;
+}
+
+.cakes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .cakes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .cakes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+}

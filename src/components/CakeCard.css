@@ -1,0 +1,66 @@
+/* src/components/CakeCard.css */
+
+.cake-card {
+  background-color: #c7c4c4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Fixed width to maintain uniformity */
+  margin: 20px;
+}
+
+.cake-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.cake-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cake-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 15px 0 10px;
+}
+
+.cake-card p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.details-link {
+  font-size: 1rem;
+  color: #3a6ea5; /* Elegant blue color for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.details-link:hover {
+  color: #ff5e5e; /* Soft red color on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+@media (max-width: 768px) {
+  .cake-card {
+    width: 220px; /* Slightly smaller cards for mobile */
+    margin: 15px;
+  }
+
+  .cake-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .cake-card p {
+    font-size: 0.9rem;
+  }
+}

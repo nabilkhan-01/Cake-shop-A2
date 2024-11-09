@@ -1,0 +1,144 @@
+/* src/pages/About.css */
+
+.about-page {
+  font-family: 'Lora', serif; /* Elegant serif font */
+  background-color: #fafafa; /* Light, neutral background */
+  color:orange;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.about-page h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: orange; /* Elegant soft blue */
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about-page p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px; /* Added padding to prevent text from touching edges */
+}
+
+.about-page h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: orange;
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-links a {
+  font-size: 1.3rem;
+  color: #3a6ea5;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff5e5e; /* Soft red for hover effect */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.contact-info p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #333;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.contact-info a {
+  font-size: 1.5rem;
+  color: #3a6ea5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #ff5e5e;
+}
+
+.about-page img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around the image */
+}
+
+@media (max-width: 768px) {
+  .about-page h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-page p {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+
+  .about-page h3 {
+    font-size: 2rem;
+  }
+
+  .social-links a {
+    font-size: 1.1rem;
+  }
+
+  .contact-info p, .contact-info a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-page p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .about-page h3 {
+    font-size: 1.8rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+
+  .contact-info p, .contact-info a {
+    font-size: 1rem;
+  }
+}

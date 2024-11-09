@@ -1,0 +1,57 @@
+/* src/pages/CakeDetails.css */
+
+.cake-details {
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px var(--shadow-color);
+}
+
+.cake-details img {
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.cake-details-content {
+  max-width: 600px;
+}
+
+.cake-details h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.cake-details .price {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin: 20px 0;
+}
+
+.selectors {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #544646;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #ff6347; /* Change to a tomato red color on hover */
+  color: white; /* Change text color to white */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}

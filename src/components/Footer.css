@@ -1,0 +1,73 @@
+/* Ensure that body is at least the full height of the viewport */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.main-content {
+  flex-grow: 1; /* This will allow the content to take the remaining space */
+}
+
+/* Footer Styling */
+.footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(51, 50, 50);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Ensures wrapping on small screens */
+}
+
+.footer a {
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff5e5e; /* Soft red color on hover */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer nav {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,123 @@
+/* src/pages/Homepage.css */
+
+.homepage {
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    color: #333;
+    background-color: #c1c1c1; /* Light background for a clean look */
+    padding: 20px;
+  }
+  
+  .hero {
+    background-color: #393939; /* New color for the hero section container */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    font-size: 3.8rem;
+    color: orange;
+    font-weight: 700;
+    letter-spacing: 2px; /* Slight letter spacing for elegance */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Making the header text more formal */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Strong text shadow for better contrast */
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: whitesmoke;
+    margin-top: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .featured-cakes {
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Elegant card-like shadow */
+    margin-top: -80px;
+    z-index: 1;
+  }
+  
+  .featured-cakes h2 {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .cakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  .cakes-grid .cake-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .cakes-grid .cake-card:hover {
+    transform: translateY(-10px); /* Slight lifting effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adding shadow on hover */
+  }
+  
+  .see-more {
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    padding: 12px 25px; /* Reduced size of the button */
+    background-color: #ff5e5e;
+    color: #fff;
+    font-size: 10px; /* Smaller font size */
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid #ff5e5e;
+  }
+  
+  .see-more:hover {
+    background-color: #d14a4a;
+    border-color: #d14a4a;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .cakes-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  
+    .hero h1 {
+      font-size: 3rem; /* Adjust header size on smaller screens */
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 80px 20px; /* Reduce padding for smaller screens */
+    }
+  
+    .cakes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
