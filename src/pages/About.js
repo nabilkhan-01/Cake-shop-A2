@@ -14,7 +14,7 @@ const About = () => (
       to custom designs, we take pride in every cake we make.
     </p>
     <h3>Contact Us</h3>
-    <p>Phone: 9572172780</p>
+    <p>Phone: 9876543210</p>
     <p>Email: info@cakeshop.com</p>
     <h3>Follow Us on Social Media</h3>
     <div className="social-links">
