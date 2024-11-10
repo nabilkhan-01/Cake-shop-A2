@@ -14,7 +14,8 @@ import './App.css';
 function App() {
   return (
     <CartProvider>
-      <Router>
+    
+      <Router basename="/Cake-shop-A2">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />

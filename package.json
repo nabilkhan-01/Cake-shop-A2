@@ -3,7 +3,7 @@
   "name": "sl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nabilkhan-01.github.io/Cake-shop-A2",
+  "homepage": "https://nabilkhan-01.github.io/Cake-shop-A2/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
